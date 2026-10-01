@@ -1,0 +1,16 @@
+## Copy and run these commands in Terminal:
+
+# 1. Add GitHub repository as remote origin (REPLACE yourusername!)
+git remote add origin https://github.com/yourusername/psn-college-erp.git
+
+# 2. Push your code to GitHub
+git push -u origin main
+
+## When prompted:
+# Username: yourgithubusername
+# Password: paste_your_personal_access_token_here
+
+## If you get "remote origin already exists" error, run:
+git remote remove origin
+git remote add origin https://github.com/yourusername/psn-college-erp.git
+git push -u origin main
