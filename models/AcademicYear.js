@@ -163,8 +163,7 @@ const academicYearSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Indexes
-academicYearSchema.index({ year: 1 });
+// Additional indexes (unique index on year already defined in schema)
 academicYearSchema.index({ status: 1 });
 academicYearSchema.index({ isActive: 1 });
 academicYearSchema.index({ startDate: 1, endDate: 1 });

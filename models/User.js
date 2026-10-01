@@ -146,12 +146,8 @@ userSchema.virtual('fullName').get(function() {
 // Add pagination plugin
 userSchema.plugin(mongoosePaginate);
 
-// Indexes
-userSchema.index({ email: 1 });
-userSchema.index({ userId: 1 });
+// Additional indexes (unique indexes already defined in schema)
 userSchema.index({ role: 1 });
-userSchema.index({ 'studentInfo.rollNumber': 1 }, { sparse: true });
-userSchema.index({ 'facultyInfo.employeeId': 1 }, { sparse: true });
 
 // Pre-save middleware to hash password
 userSchema.pre('save', async function(next) {

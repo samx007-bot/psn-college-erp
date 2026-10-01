@@ -128,9 +128,8 @@ const subjectSchema = new mongoose.Schema({
 // Add pagination plugin
 subjectSchema.plugin(mongoosePaginate);
 
-// Compound indexes
+// Compound indexes (unique index on code already defined)
 subjectSchema.index({ department: 1, semester: 1 });
-subjectSchema.index({ code: 1 });
 subjectSchema.index({ academicYear: 1, semester: 1 });
 subjectSchema.index({ 'faculty.theory': 1 });
 subjectSchema.index({ 'faculty.practical': 1 });

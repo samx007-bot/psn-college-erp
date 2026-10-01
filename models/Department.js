@@ -70,9 +70,7 @@ const departmentSchema = new mongoose.Schema({
 // Add pagination plugin
 departmentSchema.plugin(mongoosePaginate);
 
-// Indexes
-departmentSchema.index({ code: 1 });
-departmentSchema.index({ name: 1 });
+// Additional indexes (unique indexes already defined in schema)
 departmentSchema.index({ isActive: 1 });
 
 module.exports = mongoose.model('Department', departmentSchema);
