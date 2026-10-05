@@ -78,7 +78,10 @@ const setupDatabase = async () => {
                 code: 'CS301',
                 department: cseId,
                 semester: 3,
-                credits: 4,
+                credits: {
+                    theory: 3,
+                    practical: 1
+                },
                 academicYear: academicYear._id
             },
             {
@@ -86,7 +89,10 @@ const setupDatabase = async () => {
                 code: 'CS302',
                 department: cseId,
                 semester: 3,
-                credits: 3,
+                credits: {
+                    theory: 2,
+                    practical: 1
+                },
                 academicYear: academicYear._id
             },
             {
@@ -94,7 +100,10 @@ const setupDatabase = async () => {
                 code: 'CS401',
                 department: cseId,
                 semester: 4,
-                credits: 4,
+                credits: {
+                    theory: 3,
+                    practical: 1
+                },
                 academicYear: academicYear._id
             },
             {
@@ -102,7 +111,10 @@ const setupDatabase = async () => {
                 code: 'CS402',
                 department: cseId,
                 semester: 4,
-                credits: 3,
+                credits: {
+                    theory: 2,
+                    practical: 1
+                },
                 academicYear: academicYear._id
             },
             {
@@ -110,7 +122,10 @@ const setupDatabase = async () => {
                 code: 'CS501',
                 department: cseId,
                 semester: 5,
-                credits: 3,
+                credits: {
+                    theory: 2,
+                    practical: 1
+                },
                 academicYear: academicYear._id
             }
         ];
