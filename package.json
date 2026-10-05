@@ -4,12 +4,15 @@
   "description": "ERP Application for PSN Engineering College with attendance, leave management, and grades",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node start-server.js",
+    "dev": "nodemon start-server.js",
+    "server-direct": "node server.js",
     "build": "echo 'No build step required'",
     "vercel-build": "echo 'Vercel build completed'",
     "test": "jest",
-    "seed": "node utils/createDefaultAdmin.js"
+    "seed": "node utils/createDefaultAdmin.js",
+    "test-env": "node debug-env.js",
+    "test-startup": "node test-startup.js"
   },
   "keywords": [
     "erp",
