@@ -1,0 +1,18 @@
+# Koyeb deployment configuration for PSN College ERP
+services:
+  - name: psn-college-erp
+    git:
+      repository: github.com/samx007-bot/psn-college-erp
+      branch: main
+    instance_types:
+      - type: nano
+    ports:
+      - port: 3001
+        protocol: http
+    env:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3001"
+    regions:
+      - sin # Singapore for Asian users
